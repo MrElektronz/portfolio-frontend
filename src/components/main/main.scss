@@ -16,11 +16,144 @@
 
 
     .window{
+        padding: 70px 160px;
+        flex: 1;
+        overflow: hidden;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .leftTextContainer{
+            width: 600px;
+            height: 600px;
+            background-color: $highlight;
+            margin-bottom: 100px;
+            border-radius: 50%;
+            border: 2px solid $textColor;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            animation: drop 0.3s 1;
+
+            @include mobile{
+                height: 300px;
+                width: 300px;
+            }
+
+            .wrapper{
+                
+                h1{
+                    font-size: 60px;
+                    margin: 10px 0;
+
+                    @include mobile{
+                        font-size: 40px;
+                    }
+                }
+                h2{
+                    font-size: 35px;
+                    margin: 10px 0;
+
+                    
+                    @include mobile{
+                        font-size: 25px;
+                    }
+
+                }
+                h3{
+                    font-size: 30px;
+                    margin: 10px 0;
+
+                    @include mobile{
+                        font-size: 20px;
+                    }
+
+                    span{
+                        font-size: inherit;
+                        color: $textColor;
+                    }
+                    .ityped-cursor{
+                        animation: blink 1s infinite;
+                    }
+                    @keyframes blink {
+                        50%{
+                            opacity: 1;
+                        }
+                        100%{
+                            opacity: 0;
+                        }
+                    }
+                }
+            }
+        
+        }
+
+        .rightTextContainer{
+            border-radius: 50%;
+            background-color: $highlight;
+            margin-top: 100px;
+            margin-right: 100px;
+            height: 650px;
+            width: 650px;
+            align-items: center;
+            border: 2px solid $textColor;
+
+            justify-content: center;
+            display: flex;
+            color: $textColor2;
+            
+            @include mobile{
+                height: 0%;
+                width: 0%;
+            }
+
+            .wrapper{
+                h2{
+                    text-align: center;
+                    justify-content: center;
+                    font-size: 30px;
+                    margin: 60px 100px;
+
+                        
+                    @include mobile{
+                        font-size: 25px;
+                    }
+                    span{
+                        color:$textColor;
+                    }
+                }
+        }
+
+        }
+    }
+}
+      
+
+
+/*.main{
+    background-color: $mainColorDark;
+    display: flex;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    @include mobile{
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .window{
         padding: 70px 70px;
         flex: 1;
         overflow: hidden;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
 
-        .textContainer{
+        .leftTextContainer{
 
             width: 600px;
             height: 600px;
@@ -82,6 +215,13 @@
                 }
             }
         }
+
+        .rightTextContainer{
+            color: $textColor;
+            background-color: blue;
+        }
+
+
         @keyframes drop {
             0%{
             width: 0px;
@@ -100,4 +240,4 @@
     }
 
 
-}
+}*/

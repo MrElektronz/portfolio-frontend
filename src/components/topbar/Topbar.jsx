@@ -3,7 +3,7 @@ import "./topbar.scss";
 
 export default function Topbar() {
 
-    const [selected,setSelected] = useState("#main");
+    const [selected] = useState("#main");
 
     const list = [
         {
@@ -31,7 +31,7 @@ export default function Topbar() {
           </div>
           <div className="right">
               {list.map((item,i)=>(
-                  <a key={i} href={item.id} className={selected === item.id  ? "pagelink active" : "pagelink"} onClick={()=>setSelected(item.id)}>{item.title}</a>
+                  <a key={i} href={item.id} className={selected === item.id  ? "pagelink active" : "pagelink"}>{item.title}</a>
               ))}
           </div>
       </div>
