@@ -39,6 +39,18 @@
             @include mobile{
                 align-items: center;
             }
+
+            .svgWrapper{
+                fill:$textColor;
+                :hover{
+                    fill: $highlightDark;
+                    transition: fill 0.2s ease;
+                }
+                svg{
+                    transform: translateY(4px);
+                    fill: inherit;
+                }
+            }
             .pagelink{
                 font-weight: 600;
                 padding-right: 8px;
