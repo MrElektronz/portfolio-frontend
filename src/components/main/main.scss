@@ -1,0 +1,103 @@
+@import "../../global.scss";
+
+.main{
+    background-color: $mainColorDark;
+    display: flex;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    @include mobile{
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .window{
+        padding: 70px 70px;
+        flex: 1;
+        overflow: hidden;
+
+        .textContainer{
+
+            width: 600px;
+            height: 600px;
+            background-color: $highlight;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            animation: drop 0.3s 1;
+
+            @include mobile{
+                height: 300px;
+                width: 300px;
+            }
+
+            .wrapper{
+                
+                h1{
+                    font-size: 60px;
+                    margin: 10px 0;
+
+                    @include mobile{
+                        font-size: 40px;
+                    }
+                }
+                h2{
+                    font-size: 35px;
+                    margin: 10px 0;
+
+                    
+                    @include mobile{
+                        font-size: 25px;
+                    }
+
+                }
+                h3{
+                    font-size: 30px;
+                    margin: 10px 0;
+
+                    @include mobile{
+                        font-size: 20px;
+                    }
+
+                    span{
+                        font-size: inherit;
+                        color: $textColor;
+                    }
+                    .ityped-cursor{
+                        animation: blink 1s infinite;
+                    }
+                    @keyframes blink {
+                        50%{
+                            opacity: 1;
+                        }
+                        100%{
+                            opacity: 0;
+                        }
+                    }
+                }
+            }
+        }
+        @keyframes drop {
+            0%{
+            width: 0px;
+            height: 0px;
+            }
+            100%{
+            width: 600px;
+            height: 600px;
+            }
+        }
+        a{
+            position: absolute;
+            bottom: 10px;
+        }
+
+    }
+
+
+}

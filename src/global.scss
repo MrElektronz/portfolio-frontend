@@ -1,0 +1,17 @@
+$mainColor: hsl(292, 56%, 12%);
+$mainColorLight: hsl(292, 56%, 18%);
+$mainColorDark: hsl(292, 56%, 6%);
+$highlight: crimson;
+$highlight2:rgb(4, 253, 199);
+$highlightDark: hsl(348, 83%, 14%);
+$textColor: #FFFFFF;
+$textColor2:black;
+
+
+$width:  736px;
+
+@mixin mobile {
+    @media (max-width: #{$width}){
+        @content
+    }
+}

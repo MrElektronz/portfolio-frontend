@@ -1,0 +1,17 @@
+@import "../../global.scss";
+    li{
+        font-size: 18px;
+        margin: 12px;
+        padding: 7px;
+        border-radius: 10px;
+        cursor: pointer;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+
+        &.active{
+            background-color: $highlight;
+            color: $textColor2;
+        }
+    }
