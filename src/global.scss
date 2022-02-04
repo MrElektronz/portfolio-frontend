@@ -8,7 +8,7 @@ $textColor: #FFFFFF;
 $textColor2:black;
 
 
-$width:  736px;
+$width:  425px;
 
 @mixin mobile {
     @media (max-width: #{$width}){

@@ -38,6 +38,7 @@
             font-size: 18px;
             @include mobile{
                 align-items: center;
+                overflow: hidden;
             }
 
             .svgWrapper{

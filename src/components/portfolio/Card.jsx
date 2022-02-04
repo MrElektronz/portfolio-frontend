@@ -6,7 +6,7 @@ const Card = ({handlePointerEvent, name, img, cardStyle, handleHoverEvent}) => {
 
     return (
       <article className={cardStyle}>
-          <Tilt style={{height: '98%'}}
+          <Tilt className="tilt" style={{height: '98%'}}
           scale={1.2}>
         <div className="card"
         onMouseDown={handlePointerEvent}

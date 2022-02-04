@@ -80,9 +80,6 @@ export default function Portfolio() {
 
     e.target.onmouseenter = onPointerEnter;
     e.target.onmouseleave = onPointerLeave;
-    
-    let card = e.target;
-    console.log(card.className);
 
     function onPointerEnter(e){
       setHolding(true);
@@ -125,6 +122,10 @@ export default function Portfolio() {
     function onPointerMove(e) {
       /* set offset to the current position of the cursor,
       minus the initial starting position  */
+
+      if(isTouchEvent){
+        setHolding(true);
+      }
       
       offset = (isTouchEvent ? e.touches[0].clientX : e.clientX) - initialX;
       if (offset <= -swipeBorder) {
@@ -168,6 +169,10 @@ export default function Portfolio() {
       if (offset > 0 && offset < swipeBorder) {
         card.style.left = 0;
       }
+
+      if(isTouchEvent){
+        setHolding(false);
+      }
       /* remove functions from event listeners
       (stop tracking pointer movements) */
       document.onmousemove = null;
@@ -175,6 +180,7 @@ export default function Portfolio() {
 
       document.ontouchmove = null;
       document.ontouchend = null;
+
     }
   };
   //<Paginator dataLength={data.length} activeIndex={index} handlePageChange={handlePageChange}/>

@@ -18,6 +18,9 @@
     h1{
         padding: 70px 0px;
         font-size: 50px;
+        @include mobile{
+            font-size: 40px;
+        }
     }
 
 }
@@ -116,6 +119,10 @@
     pointer-events: none;
 
   }
+
+.tilt{
+    scale: 1 !important;
+}
   
   .prevCard {
     left: 0;
@@ -124,6 +131,10 @@
     &.neighbour{
         opacity: 1;
         z-index: 0;
+        @include mobile{
+            opacity: 0;
+            z-index: -1;
+        }
     }
   }
   
@@ -142,6 +153,10 @@
     &.neighbour{
         opacity: 1;
         z-index: 0;
+        @include mobile{
+            opacity: 0;
+            z-index: -1;
+        }
     }
   }
   
@@ -200,7 +215,8 @@
     background-color: $textColor;
   }
   
-  @media screen and (max-width: 425px) {
+  @include mobile {
+
     .container {
       width: 100%;
       overflow: hidden;
@@ -212,10 +228,15 @@
   
     .prevCard {
       left: -35%;
+      z-index: -1;
+      opacity: 0;
     }
   
     .nextCard {
       left: 135%;
+      z-index: -1;
+      opacity: 0;
+
     }
   }
 
