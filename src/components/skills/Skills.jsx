@@ -20,7 +20,10 @@ export default function Skills() {
           <h1 className="skills_title">General</h1>
           <span className="skills_subtitle">More than 9 years</span>
         </div>
-        <img src="img/arrow-down.svg" alt="" className="skills_arrow"/>
+        <svg xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 24 24" className="skills_arrow">
+        <path
+        d="M17.71,11.29a1,1,0,0,0-1.42,0L13,14.59V7a1,1,0,0,0-2,0v7.59l-3.29-3.3a1,1,0,0,0-1.42,1.42l5,5a1,1,0,0,0,.33.21.94.94,0,0,0,.76,0,1,1,0,0,0,.33-.21l5-5A1,1,0,0,0,17.71,11.29Z"/>
+        </svg>
       </div>
 
       <div className="skills_list grid">
@@ -67,7 +70,10 @@ export default function Skills() {
           <h1 className="skills_title">Frontend Development</h1>
           <span className="skills_subtitle">Roughly a year</span>
         </div>
-        <img src="img/arrow-down.svg" alt="" className="skills_arrow"/>
+        <svg xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 24 24" className="skills_arrow">
+        <path
+        d="M17.71,11.29a1,1,0,0,0-1.42,0L13,14.59V7a1,1,0,0,0-2,0v7.59l-3.29-3.3a1,1,0,0,0-1.42,1.42l5,5a1,1,0,0,0,.33.21.94.94,0,0,0,.76,0,1,1,0,0,0,.33-.21l5-5A1,1,0,0,0,17.71,11.29Z"/>
+        </svg>
       </div>
 
       <div className="skills_list grid">
@@ -118,7 +124,10 @@ export default function Skills() {
           <h1 className="skills_title">Backend Development</h1>
           <span className="skills_subtitle">More than 2 years</span>
         </div>
-        <img src="img/arrow-down.svg" alt="" className="skills_arrow"/>
+        <svg xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 24 24" className="skills_arrow">
+        <path
+        d="M17.71,11.29a1,1,0,0,0-1.42,0L13,14.59V7a1,1,0,0,0-2,0v7.59l-3.29-3.3a1,1,0,0,0-1.42,1.42l5,5a1,1,0,0,0,.33.21.94.94,0,0,0,.76,0,1,1,0,0,0,.33-.21l5-5A1,1,0,0,0,17.71,11.29Z"/>
+        </svg>
       </div>
 
       <div className="skills_list grid">
@@ -149,7 +158,10 @@ export default function Skills() {
           <h1 className="skills_title">Design</h1>
           <span className="skills_subtitle">More than 7 years</span>
         </div>
-        <img src="img/arrow-down.svg" alt="" className="skills_arrow"/>
+        <svg xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 24 24" className="skills_arrow">
+        <path
+        d="M17.71,11.29a1,1,0,0,0-1.42,0L13,14.59V7a1,1,0,0,0-2,0v7.59l-3.29-3.3a1,1,0,0,0-1.42,1.42l5,5a1,1,0,0,0,.33.21.94.94,0,0,0,.76,0,1,1,0,0,0,.33-.21l5-5A1,1,0,0,0,17.71,11.29Z"/>
+        </svg>
       </div>
 
       <div className="skills_list grid">
@@ -195,7 +207,10 @@ export default function Skills() {
           <h1 className="skills_title">Application Development</h1>
           <span className="skills_subtitle">More than 6 years</span>
         </div>
-        <img src="img/arrow-down.svg" alt="" className="skills_arrow"/>
+        <svg xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 24 24" className="skills_arrow">
+        <path
+        d="M17.71,11.29a1,1,0,0,0-1.42,0L13,14.59V7a1,1,0,0,0-2,0v7.59l-3.29-3.3a1,1,0,0,0-1.42,1.42l5,5a1,1,0,0,0,.33.21.94.94,0,0,0,.76,0,1,1,0,0,0,.33-.21l5-5A1,1,0,0,0,17.71,11.29Z"/>
+        </svg>
         
       </div>
 

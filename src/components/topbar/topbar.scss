@@ -50,6 +50,9 @@
                     transform: translateY(4px);
                     fill: inherit;
                 }
+                &.pad{
+                    padding-left: 10px;
+                }
             }
             .pagelink{
                 font-weight: 600;

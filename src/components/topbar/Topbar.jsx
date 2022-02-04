@@ -33,8 +33,7 @@ export default function Topbar() {
               {list.map((item,i)=>(
                   <a key={i} href={item.id} className={selected === item.id  ? "pagelink active" : "pagelink"}>{item.title}</a>
               ))}
-
-        <a href="https://github.com/MrElektronz" className="svgWrapper" target="_blank" rel="noopener noreferrer">
+        <a href="https://github.com/MrElektronz" className="svgWrapper pad" target="_blank" rel="noopener noreferrer">
               <svg version="1.1" id="github" x="0px" y="0px"
 	 width="24px" height="24px" viewBox="0 0 438.549 438.549"
 	 >
