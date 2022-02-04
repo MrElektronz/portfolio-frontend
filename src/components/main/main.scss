@@ -9,6 +9,7 @@
     -ms-user-select: none;
     user-select: none;
 
+    text-rendering: optimizeLegibility; 
 
 
 
@@ -43,6 +44,7 @@
             }
 
             .wrapper{
+                max-height: inherit;
 
                 h1{
                     font-size: 60px;
@@ -114,10 +116,12 @@
                 height: 95vw;
                 margin-top: 0px;
                 margin-right: 0px;
+                overflow: hidden;
             }
 
 
             .wrapper{
+                
                 h2{
                     text-align: center;
                     justify-content: center;

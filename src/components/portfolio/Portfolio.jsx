@@ -72,7 +72,7 @@ export default function Portfolio() {
     },4000);
 
     return () => clearInterval(interval);
-  }, [index, data,holding]);
+  }, [index, data,holding, slideRight]);
 
 
   const handleHoverEvent = (e) => {

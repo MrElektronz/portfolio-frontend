@@ -14,6 +14,12 @@ const Card = ({handlePointerEvent, name, img, cardStyle, handleHoverEvent}) => {
         onMouseEnter={handleHoverEvent}
         onMouseLeave={handleHoverEvent}>
             <img src={img} alt={name} />
+            <div className="cardContent">
+              <h2>Stock analysis</h2>
+              <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium accusamus tempora magni,
+                in pariatur ipsam sint illo ducimus minima ab? Dolores illum provident, cumque distinctio reiciendis laudantium quasi ullam dignissimos.</h3>
+                <a href="https://craws.uber.space/"  target="_blank" rel="noopener noreferrer">Try out!</a>
+            </div>
         </div>
         </Tilt>
       </article>

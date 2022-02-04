@@ -8,8 +8,6 @@ export default function Skills() {
    
    <h1 className="title">Skills</h1>
 
-{/*<span className="subtitle">My technical level</span>*/}
-
 <div className="s_container container grid">
   <div>
 

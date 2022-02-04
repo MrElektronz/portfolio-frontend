@@ -12,6 +12,7 @@
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    overflow: hidden;
 
     .wrapper{
         padding: 10px 10px;
@@ -35,10 +36,11 @@
             }
         }
         .right{
+            overflow: hidden;
+
             font-size: 18px;
             @include mobile{
                 align-items: center;
-                overflow: hidden;
             }
 
             .svgWrapper{
