@@ -11,20 +11,28 @@ export default function Portfolio() {
 
     const data = [
     {
-      name: "simon",
+      name: "Stock Analysis",
       img: "https://www.schwab.com/resource-center/insights/sites/g/files/eyrktu156/files/analysis-graph-960x537.jpg",
+      href: "https://craws.uber.space/",
+      desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur fuga officia, esse cumque nulla asperiores autem voluptatum beatae saepe eligendi reiciendis corrupti aut dolorum recusandae consectetur perspiciatis sint voluptates nihil.",
     },
     {
       name: "neo",
       img: "https://imgur.com/RF2a3PB.jpg",
+      href: "https://craws.uber.space/",
+      desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia saepe alias dolorem sunt asperiores sint in necessitatibus temporibus accusantium voluptate."
     },
     {
       name: "morpheus",
       img: "https://imgur.com/B0SNpZI.jpg",
+      href: "https://craws.uber.space/",
+      desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea, reiciendis."
     },
     {
       name: "trinity",
       img: "https://imgur.com/KnXHM0K.jpg",
+      href: "https://craws.uber.space/",
+      desc: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure nulla perspiciatis cum!"
     },
   ];
 
@@ -157,7 +165,7 @@ export default function Portfolio() {
         return;
       }
       /* set the left style property of the card to the offset value */
-      card.style.left = offset + "px";
+      //card.style.left = offset + "px";
     }
 
     function onPointerEnd(e) {

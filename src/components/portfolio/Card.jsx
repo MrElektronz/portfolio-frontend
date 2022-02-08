@@ -1,7 +1,7 @@
 import React from "react";
 import Tilt from "react-parallax-tilt";
 
-const Card = ({handlePointerEvent, name, img, cardStyle, handleHoverEvent}) => {
+const Card = ({handlePointerEvent, name, img, href, desc, cardStyle, handleHoverEvent}) => {
 
 
     return (
@@ -15,10 +15,9 @@ const Card = ({handlePointerEvent, name, img, cardStyle, handleHoverEvent}) => {
         onMouseLeave={handleHoverEvent}>
             <img src={img} alt={name} />
             <div className="cardContent">
-              <h2>Stock analysis</h2>
-              <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium accusamus tempora magni,
-                in pariatur ipsam sint illo ducimus minima ab? Dolores illum provident, cumque distinctio reiciendis laudantium quasi ullam dignissimos.</h3>
-                <a href="https://craws.uber.space/"  target="_blank" rel="noopener noreferrer">Try out!</a>
+              <h2>{name}</h2>
+              <h3>{desc}</h3>
+                <a href={href}  target="_blank" rel="noopener noreferrer">Try out!</a>
             </div>
         </div>
         </Tilt>

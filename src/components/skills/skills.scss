@@ -131,6 +131,19 @@
     border-radius: 10px;
 }
 
+@include mobile{
+
+    .skills_title{
+        font-size: 6.5vw;
+    }
+    .skills_subtitle{
+        font-size: 4.25vw;
+    }
+
+}
+
+
+
 .active .skills_title{
     color: $textColor2;
 }
