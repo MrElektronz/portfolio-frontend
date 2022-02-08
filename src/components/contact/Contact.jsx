@@ -17,7 +17,7 @@ export default function Contact() {
       <h2>Do you have any projects you need help with?</h2>
       <h3>Let's talk!</h3>
       <form onSubmit={handleSubmit}>
-        <input type="text" placeholder="Email" />
+        <input type="email" placeholder="Email" required="required"/>
         <textarea placeholder="Message"></textarea>
         <button type="submit">Send</button>
         {message && <span>Thanks, I will reply ASAP :)</span>}
