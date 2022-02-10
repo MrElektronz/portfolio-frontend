@@ -217,7 +217,7 @@ export default function Skills() {
          <div className="skill_info">
            <div className="skill_bg">
              <img src="img/ue4.png" alt="" />
-             <h4>Unreal Engine 4</h4>
+             <h3>Unreal Engine 4</h3>
            </div>
          </div>
 

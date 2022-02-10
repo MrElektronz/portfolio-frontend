@@ -14,25 +14,24 @@ export default function Portfolio() {
       name: "Stock Analysis",
       img: "https://www.schwab.com/resource-center/insights/sites/g/files/eyrktu156/files/analysis-graph-960x537.jpg",
       href: "https://craws.uber.space/",
-      desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur fuga officia, esse cumque nulla asperiores autem voluptatum beatae saepe eligendi reiciendis corrupti aut dolorum recusandae consectetur perspiciatis sint voluptates nihil.",
+      desc: "This website lists all stocks in the DAX and DowJones, including its graph data and numerous characteristics. The frontend was developed in 'Angular' "+
+      "and the backend is coded in Python and uses 'Flask' to send processed data from it to the frontend.",
+      btn: "Try out!"
     },
     {
-      name: "neo",
-      img: "https://imgur.com/RF2a3PB.jpg",
-      href: "https://craws.uber.space/",
-      desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia saepe alias dolorem sunt asperiores sint in necessitatibus temporibus accusantium voluptate."
+      name: "KniffelOWL",
+      img: "https://cdn2.familie.de/4c/d2/60/1d30c3bf164089f554c7361224_cmUgOTUwIDQ3NQM0MjEwYjY4NWM2Mg==_play-a-game-with-dice.jpg",
+      href: "https://github.com/MrElektronz/KniffelOWL",
+      desc: "A university project which enables users to play the game yahtzee online. The client and server were both developed in Java, to add a more modern look to the client I've utilized the framework 'JavaFX'. "+
+      "The server operates through Java's included websockets.",
+      btn: "Check it out"
     },
     {
-      name: "morpheus",
-      img: "https://imgur.com/B0SNpZI.jpg",
-      href: "https://craws.uber.space/",
-      desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea, reiciendis."
-    },
-    {
-      name: "trinity",
-      img: "https://imgur.com/KnXHM0K.jpg",
-      href: "https://craws.uber.space/",
-      desc: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure nulla perspiciatis cum!"
+      name: "Unreal Engine 4 Assets",
+      img: "https://wallpapercave.com/wp/wp8039110.jpg",
+      href: "https://www.unrealengine.com/marketplace/en-US/profile/MrElektronz",
+      desc: "I've developed a plentitude of asset packs for the 'Unreal Engine 4', including a magnetism simulation and a functioning Buff System.",
+      btn: "Check it out"
     },
   ];
 
@@ -191,6 +190,13 @@ export default function Portfolio() {
 
     }
   };
+
+  function getCardScale(){
+    if(window.innerWidth < 510){
+      return 1.0;
+    }
+    return 1.2;
+  }
   //<Paginator dataLength={data.length} activeIndex={index} handlePageChange={handlePageChange}/>
   return <div className="portfolio" id="portfolio">
     <h1>Portfolio</h1>
@@ -220,7 +226,7 @@ export default function Portfolio() {
               }
             }
 
-          return <Card key={n} handlePointerEvent={handlePointerEvent} {...card} cardStyle={position} handleHoverEvent={handleHoverEvent}></Card>
+          return <Card key={n} handlePointerEvent={handlePointerEvent} {...card} cardStyle={position} handleHoverEvent={handleHoverEvent} cardScale={getCardScale()}></Card>
         })}
       </div>
     </div>

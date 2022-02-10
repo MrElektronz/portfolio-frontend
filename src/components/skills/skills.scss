@@ -116,12 +116,19 @@
             z-index: 0;
             transition: opacity 0.2s ease;
         }
+
+        text-align: center;
+        
         h3{
             font-size: 20px;
         }
-        h4{
-            font-size: 18px;
+
+        @include mobile{
+            h3{
+                font-size: 4vw;
+            }
         }
+
     }
 }
 
